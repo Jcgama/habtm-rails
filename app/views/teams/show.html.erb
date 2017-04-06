@@ -1,0 +1,8 @@
+<%= @team.id %>
+
+<h1><%= @team.id %>, Chelsão</h1>
+
+<%= form_tag(controller: "teams", action: "favorite", method: "post") do %>
+    <%= submit_tag "Favorite"%>
+<% end %>
+
